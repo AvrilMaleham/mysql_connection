@@ -1,4 +1,6 @@
 const express = require("express");
+let groceryItemRoutes = require('./routes/groceryItemRoutes');
+
 
 const app = express();
 
@@ -8,6 +10,7 @@ let dbConnect = require("./dbConnect")
 
 // parse requests of content-type -application/json
 app.use(express.json());
+app.use('/api/groceryItems', groceryItemRoutes);
 
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to my MySQL application." });

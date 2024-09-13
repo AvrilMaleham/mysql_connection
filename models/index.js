@@ -1,6 +1,6 @@
 "use strict";
 
-const GroceryItem = require("./grocery-item");
+const GroceryItem = require("./groceryItem");
 
 async function init() {
   await GroceryItem.sync();
