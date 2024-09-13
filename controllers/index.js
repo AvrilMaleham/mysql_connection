@@ -1,3 +1,3 @@
 module.exports = {
-    userController: require('./groceryItemController')
-    }
+  userController: require("./groceryItemController"),
+};
